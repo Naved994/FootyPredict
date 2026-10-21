@@ -1,0 +1,100 @@
+{
+  "metrics_summary": {
+    "Logistic Regression": {
+      "Accuracy": 49.32,
+      "Precision_Macro": 30.77,
+      "Recall_Macro": 37.05,
+      "F1_Macro": 32.48,
+      "F1_Weighted": 41.75
+    },
+    "Random Forest": {
+      "Accuracy": 49.09,
+      "Precision_Macro": 31.23,
+      "Recall_Macro": 36.27,
+      "F1_Macro": 31.36,
+      "F1_Weighted": 40.63
+    },
+    "Gradient Boosting": {
+      "Accuracy": 48.18,
+      "Precision_Macro": 37.57,
+      "Recall_Macro": 36.68,
+      "F1_Macro": 33.0,
+      "F1_Weighted": 41.57
+    },
+    "Neural Network": {
+      "Accuracy": 40.45,
+      "Precision_Macro": 35.73,
+      "Recall_Macro": 35.63,
+      "F1_Macro": 35.66,
+      "F1_Weighted": 40.28
+    },
+    "FootyPredict (Dual-Stage Ensemble)": {
+      "Accuracy": 50.45,
+      "Precision_Macro": 32.52,
+      "Recall_Macro": 38.17,
+      "F1_Macro": 33.84,
+      "F1_Weighted": 43.09
+    }
+  },
+  "confusion_matrix": [
+    [
+      178,
+      1,
+      37
+    ],
+    [
+      71,
+      0,
+      16
+    ],
+    [
+      92,
+      1,
+      44
+    ]
+  ],
+  "classes": [
+    "Home Win",
+    "Draw",
+    "Away Win"
+  ],
+  "feature_names": [
+    "EloDiff",
+    "HomeElo",
+    "AwayElo",
+    "HomeFormPts5",
+    "AwayFormPts5",
+    "HomeFormGD5",
+    "AwayFormGD5",
+    "RestDaysHome",
+    "RestDaysAway",
+    "HomeShots",
+    "AwayShots",
+    "HomeShotsOnTarget",
+    "AwayShotsOnTarget",
+    "HomeCorners",
+    "AwayCorners"
+  ],
+  "feature_importances": {
+    "EloDiff": 0.1567,
+    "HomeElo": 0.1199,
+    "AwayElo": 0.1394,
+    "HomeFormPts5": 0.0453,
+    "AwayFormPts5": 0.0528,
+    "HomeFormGD5": 0.064,
+    "AwayFormGD5": 0.0398,
+    "RestDaysHome": 0.0271,
+    "RestDaysAway": 0.029,
+    "HomeShots": 0.0414,
+    "AwayShots": 0.0809,
+    "HomeShotsOnTarget": 0.0357,
+    "AwayShotsOnTarget": 0.0987,
+    "HomeCorners": 0.0328,
+    "AwayCorners": 0.0366
+  },
+  "sample_size": {
+    "total": 2200,
+    "train": 1760,
+    "test": 440
+  }
+}
